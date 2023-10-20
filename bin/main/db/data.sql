@@ -14,7 +14,18 @@ INSERT INTO user_tb (`id`,`email`,`password`,`username`) VALUES ('1', 'ssar@nate
 -- INSERT INTO product_tb (`id`,`product_name`,`description`,`image`, `price`) VALUES ('12', '깨끗한나라 순수소프트 30롤 2팩. 무형광, 도톰 3겹', '', '/images/12.jpg', '28900');
 -- INSERT INTO product_tb (`id`,`product_name`,`description`,`image`, `price`) VALUES ('13', '생활공작소 초미세모 칫솔 12입 2개+가글 증정', '', '/images/13.jpg', '9900');
 -- INSERT INTO product_tb (`id`,`product_name`,`description`,`image`, `price`) VALUES ('14', '경북 영천 샤인머스켓 가정용 1kg 2수 내외', '', '/images/14.jpg', '9900');
-INSERT INTO product_tb (`id`,`product_name`,`product_eng_name`,`code`, `description`,`image`,`price`,`note`) VALUES ('1', '아이스아메리카노','Iced-Ameriano','1','물타고얼음넣은 에스프레소입니다.','/images/1.jpg','148000','Best');
+INSERT INTO product_tb (`id`,`product_name`,`product_eng_name`,`code`, `description`,`image`,`price`,`note`) VALUES ('1', '아이스아메리카노','Iced-Ameriano','1','물타고얼음넣은 에스프레소입니다.','/images/1.jpg','4800','Best');
+INSERT INTO product_tb (`id`,`product_name`,`product_eng_name`,`code`, `description`,`image`,`price`,`note`) VALUES ('2', '카페라떼','Caffe-Latte','1','우유타고얼음넣은 에스프레소입니다.','/images/2.jpg','5500','Best');
+INSERT INTO product_tb (`id`,`product_name`,`product_eng_name`,`code`, `description`,`image`,`price`,`note`) VALUES ('1', '돌체라떼','Dolche-Latte','1','연유타고얼음넣은 에스프레소입니다.','/images/3.jpg','6800','Best');
+INSERT INTO product_tb (`id`,`product_name`,`product_eng_name`,`code`, `description`,`image`,`price`,`note`) VALUES ('1', '바닐라라떼','Vanila-Latte','1','바닐라시럽타고얼음넣은 에스프레소입니다.','/images/4.jpg','6300','Best');
+INSERT INTO product_tb (`id`,`product_name`,`product_eng_name`,`code`, `description`,`image`,`price`,`note`) VALUES ('1', '아포가토','Apo-Gatto','1','아이스크림넣은 에스프레소입니다.','/images/5.jpg','7900','new');
+INSERT INTO product_tb (`id`,`product_name`,`product_eng_name`,`code`, `description`,`image`,`price`,`note`) VALUES ('1', '프라푸치노','Frapuccino','1','녹차타고얼음갈아넣은 에스프레소입니다.','/images/6.jpg','6700','hot');
+INSERT INTO product_tb (`id`,`product_name`,`product_eng_name`,`code`, `description`,`image`,`price`,`note`) VALUES ('1', '레모네이드','Remonade','1','레몬시럽타고얼음넣은 에스프레소입니다.','/images/7.jpg','4900');
+INSERT INTO product_tb (`id`,`product_name`,`product_eng_name`,`code`, `description`,`image`,`price`,`note`) VALUES ('1', '자몽허니블랙티','Gratefruit-Honey-Blacktea','1','자몽이랑꿀이랑얼음넣은 홍차입니다.','/images/8.jpg','9300','Best');
+INSERT INTO product_tb (`id`,`product_name`,`product_eng_name`,`code`, `description`,`image`,`price`,`note`) VALUES ('1', '말차티','Malchatea','1','녹차입니다.','/images/9.jpg','4800');
+INSERT INTO product_tb (`id`,`product_name`,`product_eng_name`,`code`, `description`,`image`,`price`,`note`) VALUES ('1', '얼그레이','Eargrey','1','얼그레이홍차입니다.','/images/10.jpg','4800');
+INSERT INTO product_tb (`id`,`product_name`,`product_eng_name`,`code`, `description`,`image`,`price`,`note`) VALUES ('1', '히비스커스','Hiviscuss','1','히비스커스차입니다.','/images/11.jpg','4800');
+INSERT INTO product_tb (`id`,`product_name`,`product_eng_name`,`code`, `description`,`image`,`price`,`note`) VALUES ('1', '밀크티','Milktea','1','밀크티입니다','/images/12.jpg','4800');
 
 
     -- private int id; // PK

@@ -60,7 +60,7 @@ public class JwtAuthorizationFilter implements Filter {
             chain.doFilter(request, response);
         } catch (SignatureVerificationException | JWTDecodeException e1) {
             onError(response, "토큰 검증 실패");
-        } catch (TokenExpiredException e2){
+        } catch (TokenExpiredException e2) {
             onError(response, "토큰 시간 만료");
         }
     }
@@ -72,7 +72,7 @@ public class JwtAuthorizationFilter implements Filter {
         try {
             String body = new ObjectMapper().writeValueAsString(e401.body());
             response.setStatus(e401.status().value());
-            //response.setHeader("Content-Type", "application/json; charset=utf-8");
+            // response.setHeader("Content-Type", "application/json; charset=utf-8");
             response.setContentType(MediaType.APPLICATION_JSON_VALUE);
             PrintWriter out = response.getWriter();
             out.println(body);

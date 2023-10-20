@@ -12,6 +12,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+@NoArgsConstructor
 @Getter
 @Setter
 @Entity
@@ -30,24 +31,26 @@ public class Product {
     private String description; // 상품설명
     @Column(length = 500)
     private String image; // 상품이미지
-    private int price; // 가격
+    private int productPrice; // 가격
+    @Column(nullable = true)
     private String note; // hot,new,best
+    @Column(nullable = true)
+    private String productInfo; // 제품영양정보
+    @Column(nullable = true)
+    private String productAllergy; // 알레르기유발요인
 
-    @Builder
     public Product(int id, String productName, String productEngName, int code, String description, String image,
-            int price, String note) {
+            int productPrice, String note, String productInfo, String productAllergy) {
         this.id = id;
         this.productName = productName;
         this.productEngName = productEngName;
         this.code = code;
         this.description = description;
         this.image = image;
-        this.price = price;
+        this.productPrice = productPrice;
         this.note = note;
+        this.productInfo = productInfo;
+        this.productAllergy = productAllergy;
     }
-
-    // public static UserBuilder builder() {
-    // return null;
-    // }
 
 }

@@ -10,8 +10,8 @@ import com.example.kakao._core.filter.JwtAuthorizationFilter;
 public class FilterConfig {
     @Bean
     FilterRegistrationBean<JwtAuthorizationFilter> jwtFilter() {
-        FilterRegistrationBean<JwtAuthorizationFilter> bean = 
-            new FilterRegistrationBean<>(new JwtAuthorizationFilter());
+        FilterRegistrationBean<JwtAuthorizationFilter> bean = new FilterRegistrationBean<>(
+                new JwtAuthorizationFilter());
         bean.addUrlPatterns("/products/*");
         bean.addUrlPatterns("/carts/*");
         bean.addUrlPatterns("/orders/*");
